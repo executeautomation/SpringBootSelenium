@@ -26,28 +26,6 @@ public class SpringTestNGTests {
                     .withRecordingMode(BrowserWebDriverContainer.VncRecordingMode.RECORD_FAILING, new File("./target/"))
                     .withCapabilities(new ChromeOptions());
 
-
-
-    @Test
-    public void shouldSuccessfullyPassThisTestUsingTheRemoteDriver() throws InterruptedException {
-
-        RemoteWebDriver driver = chrome.getWebDriver();
-        String url = "https://executeautomation.com";
-        System.out.println("Spring Boot URL is: " + url);
-        driver.get(url);
-        driver.quit();
-    }
-
-    @Test
-    public void shouldSuccessfullyAlwaysPassThisTestUsingTheRemoteDriver() throws InterruptedException {
-
-        RemoteWebDriver driver = chrome.getWebDriver();
-        String url = "https://executeautomation.com";
-        System.out.println("Spring Boot URL is: " + url);
-        driver.get(url);
-        driver.quit();
-    }
-
     @Test
     public void shouldSuccessfullyFailThisTestUsingTheRemoteDriver() throws InterruptedException {
 
