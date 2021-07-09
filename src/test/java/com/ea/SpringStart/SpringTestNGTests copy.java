@@ -36,6 +36,11 @@ public class SpringTestNGTests {
         System.out.println("Selenium remote URL is: " + chrome.getSeleniumAddress());
         System.out.println("VNC URL is: " + chrome.getVncAddress());
 
+        System.out.println("Selenium remote URL is: " + chrome.getSeleniumAddress());
+        System.out.println("VNC URL is: " + chrome.getVncAddress());
+
+
+
         String url = "https://executeautomation.com";
         System.out.println("Spring Boot URL is: " + url);
         driver.get(url);
