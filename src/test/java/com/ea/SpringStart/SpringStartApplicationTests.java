@@ -38,6 +38,26 @@ class SpringStartApplicationTests {
 	}
 
 	@Test
+	void contextLoads2() {
+		System.out.println(appUrl);
+//		homePage.Navigate(appUrl);
+//		homePage.ClickLogin();
+//		loginPage.Login("admin", "password");
+//		loginPage.ClickLogin();
+	}
+
+
+	@Test
+	void contextLoads3() {
+		System.out.println(appUrl);
+//		homePage.Navigate(appUrl);
+//		homePage.ClickLogin();
+//		loginPage.Login("admin", "password");
+//		loginPage.ClickLogin();
+	}
+
+
+	@Test
 	@Profile("!qa")
 	void contextLoads() {
 
