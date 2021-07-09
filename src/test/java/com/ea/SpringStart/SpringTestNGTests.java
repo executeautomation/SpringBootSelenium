@@ -30,6 +30,16 @@ public class SpringTestNGTests {
     public void shouldSuccessfullyFailThisTestUsingTheRemoteDriver() throws InterruptedException {
 
         RemoteWebDriver driver = chrome.getWebDriver();
+        String url = "https://executeautomation.com";
+        System.out.println("Spring Boot URL is: " + url);
+        driver.get(url);
+        driver.quit();
+    }
+
+    @Test
+    public void shouldSuccessfullyPassThisTestUsingTheRemoteDriver() throws InterruptedException {
+
+        RemoteWebDriver driver = chrome.getWebDriver();
 
         System.out.println("Selenium remote URL is: " + chrome.getSeleniumAddress());
         System.out.println("VNC URL is: " + chrome.getVncAddress());
