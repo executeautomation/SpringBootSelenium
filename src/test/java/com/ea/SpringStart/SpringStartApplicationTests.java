@@ -19,9 +19,6 @@ class SpringStartApplicationTests {
 	@Autowired
 	private HomePage homePage;
 
-	@Autowired
-	private LoginPage loginPage;
-
 	@Value("${app.url}")
 	private String appUrl;
 
