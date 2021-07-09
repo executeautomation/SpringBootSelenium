@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Profile;
 import java.util.List;
 
 @SpringBootTest(classes = SpringStartApplication.class)
-@Profile("prod")
+@Profile("second")
 class SpringStartApplicationTests {
 
 	@Autowired
@@ -24,12 +24,6 @@ class SpringStartApplicationTests {
 
 	@Value("chrome,firefox,edge")
 	private List<String> browsers;
-
-	@Value("${app.url}")
-	private String appUrl1;
-
-	@Value("${app.url}")
-	private String appUrl2;
 
 	@Value("testing")
 	private String environment;
