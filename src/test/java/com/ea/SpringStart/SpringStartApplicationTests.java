@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Profile;
 import java.util.List;
 
 @SpringBootTest(classes = SpringStartApplication.class)
-@Profile("prod")
+@Profile("second")
 class SpringStartApplicationTests {
 
 	@Autowired
