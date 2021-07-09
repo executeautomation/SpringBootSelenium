@@ -25,6 +25,12 @@ class SpringStartApplicationTests {
 	@Value("chrome,firefox,edge")
 	private List<String> browsers;
 
+	@Value("${app.url}")
+	private String appUrl1;
+
+	@Value("${app.url}")
+	private String appUrl2;
+
 	@Value("testing")
 	private String environment;
 
